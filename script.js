@@ -13,16 +13,14 @@ let resultBtn = btn.addEventListener('click', () => {
     } else {
         result.innerHTML = btnResult
         historyArr.push(btnResult)
-        let res = historyArr.reduce((acc, number) => number + acc, 0)
 
-        if (historyArr.length > 5) {
-            historyArr.length = 0
-            res = 0
-        } else if(historyArr.length === 5) {
+        if(historyArr.length == 5) {
+            let res = historyArr.reduce((acc, number) => number + acc, 0)
             let fin = document.createElement('div')
             fin.className = 'final-result'
             fin.innerHTML = `Your result is ${res}`
             history.appendChild(fin)
+            historyArr.length = 0
         } 
 
         console.log(btnResult);
