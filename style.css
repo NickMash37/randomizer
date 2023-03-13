@@ -80,6 +80,10 @@ body {
 /* Media */
 
 @media (max-width: 780px) {
+    body {
+        max-height: fit-content;
+    }
+
     .result {
         width: 40%;
     }
@@ -107,5 +111,25 @@ body {
 
     .final-result {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 880px) and (orientation: landscape) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .result {
+        max-width: 50%;
+    }
+
+    .history {
+        max-width: 40%;
+    }
+
+    .final-result {
+        font-size: 18px;
+        max-width: fit-content;
     }
 }
