@@ -25,7 +25,7 @@ body {
     color: black;
     margin: auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     padding-top: 50px;
 }
 
@@ -62,15 +62,50 @@ body {
 
 .history {
     margin: 20px auto;
-    width: 50%;
+    width: 30%;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: left;
 }
 
 .final-result {
-    width: 100%;
-    height: fit-content;
-    font-size: 24px;
-    align-self: center;
+    width: fit-content;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+/* Media */
+
+@media (max-width: 780px) {
+    .result {
+        width: 40%;
+    }
+
+    .result-p {
+        text-align: center;
+        font-size: 28px;
+        height: 80px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .result i {
+        padding: 0;
+        text-align: center;
+    }
+
+    button span {
+        display: none;
+    }
+
+    .history {
+        margin: 10px auto;
+    }
+
+    .final-result {
+        font-size: 15px;
+    }
 }

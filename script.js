@@ -18,7 +18,7 @@ let resultBtn = btn.addEventListener('click', () => {
             let res = historyArr.reduce((acc, number) => number + acc, 0)
             let fin = document.createElement('div')
             fin.className = 'final-result'
-            fin.innerHTML = `Your result is ${res}`
+            fin.innerHTML = `Your result is ${res} (${historyArr.map((item) => item)})`
             history.appendChild(fin)
             historyArr.length = 0
         } 
