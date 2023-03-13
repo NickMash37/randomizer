@@ -1,4 +1,5 @@
-const btn = document.querySelector('button')
+const btn = document.querySelector('.roll-btn')
+const reset = document.querySelector('.reset-btn')
 let result = document.querySelector('p')
 
 let resultBtn = btn.addEventListener('click', () => {
@@ -9,4 +10,8 @@ let resultBtn = btn.addEventListener('click', () => {
     } else {
         return result.innerHTML = btnResult
     }
+})
+
+reset.addEventListener('click', () => {
+    return result.innerHTML = 0
 })
