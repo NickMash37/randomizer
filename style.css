@@ -125,6 +125,9 @@ body {
     }
 
     .history {
+        max-height: 60vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
         max-width: 40%;
     }
 
